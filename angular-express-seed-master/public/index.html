@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html ng-app="myApp">
+<head>
+    <script src="js/lib/angular/angular.js" ></script>
+    <script src="js/app.js" ></script>
+    <script src="js/controllers.js" ></script>
+    <script src="js/services/address.js" ></script>
+    <script src="js/directive/address.js" ></script>
+    <script src="js/services/reddit.js" ></script>
+    <script src="js/services/audio.js" ></script>
+    <link href="css/app.css" rel="stylesheet" >
+</head>
+<body ng-controller="myController">
+    <h1 ng-click="resetStreet()">Address</h1>
+    <ng-include src="'Partials/address.html'"></ng-include>
+    <input type="text" ng-model="address.street">
+
+    <h1>Some reddit distraction</h1>
+    <ng-include src="'Partials/reddit.html'"></ng-include>
+
+</body>
+</html>

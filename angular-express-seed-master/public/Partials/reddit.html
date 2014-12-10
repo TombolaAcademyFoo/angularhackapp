@@ -1,0 +1,4 @@
+<table>
+    <tr><th>Author</th><th>Subject</th></tr>
+    <tr ng-repeat="post in reddit.data"><td>{{post.data.author}}</td><td><a href="{{post.data.url}}">{{post.data.title}}</a></td></tr>
+</table>
